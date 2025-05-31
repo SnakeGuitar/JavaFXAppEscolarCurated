@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="javafxappescolarcurated.controlador.FXMLInicioSesionController">
+   <children>
+      <AnchorPane layoutX="-5.0" prefHeight="400.0" prefWidth="266.0" style="-fx-background-color: #619af2;">
+         <children>
+            <Button layoutX="39.0" layoutY="282.0" mnemonicParsing="false" onAction="#buttonIniciarSesion" prefHeight="31.0" prefWidth="187.0" text="Iniciar Sesion" />
+            <TextField fx:id="textFieldPassword" layoutX="40.0" layoutY="225.0" promptText="contraseña123" />
+            <TextField fx:id="textFieldUsuario" layoutX="39.0" layoutY="158.0" promptText="rosita123" />
+            <Label layoutX="69.0" layoutY="35.0" text="Bienvenido" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="70.0" text="Ingresa tus credenciales" textFill="WHITE" />
+            <Label layoutX="39.0" layoutY="137.0" text="Usuario" textFill="WHITE" />
+            <Label layoutX="39.0" layoutY="200.0" text="Contraseña" textFill="WHITE" />
+            <Label fx:id="labelErrorUsuario" layoutX="194.0" layoutY="137.0" textFill="RED" />
+            <Label fx:id="labelErrorPassword" layoutX="195.0" layoutY="200.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="347.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@recursos/imagenes/lis_logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

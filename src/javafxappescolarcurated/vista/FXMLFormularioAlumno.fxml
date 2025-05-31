@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxappescolarcurated.controlador.FXMLFormularioAlumnoController">
+   <children>
+      <ImageView fx:id="imageViewFotoAlumno" fitHeight="173.0" fitWidth="187.0" layoutX="435.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="435.0" layoutY="228.0" mnemonicParsing="false" onAction="#buttonSeleccionarFoto" prefHeight="31.0" prefWidth="187.0" text="Seleccionar" />
+      <TextField fx:id="textFieldNombre" layoutX="52.0" layoutY="69.0" promptText="nombre" />
+      <TextField fx:id="textFieldApPaterno" layoutX="52.0" layoutY="119.0" promptText="apPaterno" />
+      <TextField fx:id="textFieldApMaterno" layoutX="52.0" layoutY="174.0" promptText="apMaterno" />
+      <TextField fx:id="textFieldMatricula" layoutX="52.0" layoutY="228.0" promptText="matricula" />
+      <TextField fx:id="textFieldEmail" layoutX="52.0" layoutY="285.0" promptText="email" />
+      <DatePicker fx:id="datePickerFechaNacimiento" layoutX="52.0" layoutY="338.0" prefHeight="31.0" prefWidth="187.0" promptText="fechaNac" />
+      <ComboBox fx:id="comboBoxFacultad" layoutX="435.0" layoutY="285.0" prefHeight="31.0" prefWidth="187.0" promptText="facultad" />
+      <ComboBox fx:id="comboBoxCarrera" layoutX="435.0" layoutY="338.0" prefHeight="31.0" prefWidth="187.0" promptText="carrera" />
+      <Button layoutX="435.0" layoutY="455.0" mnemonicParsing="false" onAction="#buttonGuardar" prefHeight="31.0" prefWidth="187.0" text="guardar" />
+      <Button layoutX="239.0" layoutY="455.0" mnemonicParsing="false" onAction="#buttonCancelar" prefHeight="31.0" prefWidth="187.0" text="cancelar" />
+      <Label fx:id="labelNombreError" layoutX="248.0" layoutY="74.0" textFill="RED" />
+      <Label fx:id="labelApPaternoError" layoutX="248.0" layoutY="124.0" textFill="RED" />
+      <Label fx:id="labelApMaternoError" layoutX="248.0" layoutY="179.0" textFill="RED" />
+      <Label fx:id="labelMatriculaError" layoutX="248.0" layoutY="233.0" textFill="RED" />
+      <Label fx:id="labelEmailError" layoutX="248.0" layoutY="290.0" textFill="RED" />
+      <Label fx:id="labelFechaNacError" layoutX="248.0" layoutY="343.0" textFill="RED" />
+      <Label fx:id="labelFacultadError" layoutX="385.0" layoutY="290.0" textFill="RED" />
+      <Label fx:id="labelCarreraError" layoutX="385.0" layoutY="343.0" textFill="RED" />
+   </children>
+</AnchorPane>
